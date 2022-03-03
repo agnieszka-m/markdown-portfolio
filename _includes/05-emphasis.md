@@ -11,4 +11,5 @@
 * Confluence
 * FrameMaker
 * Arbortext Editor
+* MS Office
 
