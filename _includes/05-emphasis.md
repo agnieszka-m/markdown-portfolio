@@ -9,4 +9,6 @@
 *These are some of the tools I know*:
 * Camtasia
 * Confluence
+* FrameMaker
+* Arbortext Editor
 
