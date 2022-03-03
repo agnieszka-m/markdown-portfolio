@@ -5,6 +5,7 @@
 * Information Architecture
 * Content Strategy
 * Writing for the Web
+* Video tutorials
 
 *These are some of the tools I know*:
 * Camtasia
