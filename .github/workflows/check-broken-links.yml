@@ -1,7 +1,12 @@
 name: Broken Links Checker
 on:
-  schedule:
-    - cron:  '0 1 1 * *'
+ push:
+    branches:
+      - main # Modify if you use a different main branch name, such as the legacy "master" name.
+ pull_request:
+    branches:
+      - main # Modify if you use a different main branch name, such as the legacy "master" name.
+      
 env:
   WEBSITE_URL: "https://haystack.deepset.ai"
   ISSUE_TEMPLATE: ".github/workflows/check-broken-links.md"
