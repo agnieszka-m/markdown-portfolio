@@ -7,9 +7,9 @@ You can think of the DocumentStore as a "database" that:
 
 There are different DocumentStores in Haystack to fit different use cases and tech stacks.
 
-## Initialisation
+## Initialization
 
-Initialising a new DocumentStore within Haystack is straight forward.
+Initializing a new DocumentStore within Haystack is straight forward.
 
 <Disclosures
     options={[
@@ -187,10 +187,10 @@ document_store.write_documents(dicts)
 
 ## Writing Documents (Sparse Retrievers)
 
-Haystack allows for you to write store documents in an optimised fashion so that query times can be kept low.
+Haystack allows for you to write store documents in an optimized fashion so that query times can be kept low.
 For **sparse**, keyword based retrievers such as BM25 and TF-IDF,
 you simply have to call `DocumentStore.write_documents()`.
-The creation of the inverted index which optimises querying speed is handled automatically.
+The creation of the inverted index which optimizes querying speed is handled automatically.
 
 ```python
 document_store.write_documents(dicts)
@@ -267,7 +267,7 @@ The Document Stores have different characteristics. You should choose one depend
                 <ul>
                     <li>Fully open source (Apache 2.0 license)</li>
                     <li>Essentially the same features as Elasticsearch</li>
-                    <li>Has more support for vector similarity comparisons and approximate nearest neighbours algorithms</li>
+                    <li>Has more support for vector similarity comparisons and approximate nearest neighbors algorithms</li>
                 </ul>
                 <strong>Cons:</strong>
                 <ul>
@@ -302,7 +302,7 @@ The Document Stores have different characteristics. You should choose one depend
                 <strong>Pros:</strong>
                 <ul>
                     <li>Fast & accurate dense retrieval</li>
-                    <li>Highly scalable due to approximate nearest neighbour algorithms (ANN)</li>
+                    <li>Highly scalable due to approximate nearest neighbor algorithms (ANN)</li>
                     <li>Many options to tune dense retrieval via different index types (more info <a href="https://github.com/facebookresearch/faiss/wiki/Guidelines-to-choose-an-index">here</a>)</li>
                 </ul>
                 <strong>Cons:</strong>
@@ -325,7 +325,7 @@ The Document Stores have different characteristics. You should choose one depend
                 <strong>Cons:</strong>
                 <ul>
                     <li>Slow retrieval on larger datasets</li>
-                    <li>No Approximate Nearest Neighbours (ANN)</li>
+                    <li>No Approximate Nearest Neighbors (ANN)</li>
                     <li>Not recommended for production</li>
                 </ul>
                 </div>

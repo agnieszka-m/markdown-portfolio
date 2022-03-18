@@ -11,7 +11,7 @@ Without a Ranker and its re-ranking step, the querying process is faster but the
 If you want to do "semantic document search" instead of a question answering, try first with a Retriever only.
 In case the semantic similarity of the query and the resulting documents is low, add a Ranker.
 
-Note that a Ranker needs to be initialised with a model trained on a text pair classification task.
+Note that a Ranker needs to be initialized with a model trained on a text pair classification task.
 You can train the model also with the train() method of the Ranker.
 Alternatively, [this example](https://github.com/deepset-ai/FARM/blob/master/examples/text_pair_classification.py) shows how to train a text pair classification model in FARM.
 
@@ -31,7 +31,7 @@ With a SentenceTransformersRanker, you can:
 
 <div style={{ marginBottom: "3rem" }} />
 
-### Initialisation
+### Initialization
 
 ```python
 from haystack.document_stores import ElasticsearchDocumentStore

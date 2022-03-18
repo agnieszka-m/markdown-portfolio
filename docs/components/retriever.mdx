@@ -80,7 +80,7 @@ It improves upon its predecessor in two main aspects:
 
 - It saturates `tf` after a set number of occurrences of the given term in the document
 
-- It normalises by document length so that short documents are favoured over long documents if they have the same amount of word overlap with the query
+- It normalizes by document length so that short documents are favoured over long documents if they have the same amount of word overlap with the query
 
 ```python
 from haystack.document_stores import ElasticsearchDocumentStore
@@ -220,7 +220,7 @@ Where:
 
 - `idf` is the inverse of the fraction of documents containing the word.
 
-In practice, both terms are usually log normalised.
+In practice, both terms are usually log normalized.
 
 ```python
 from haystack.document_stores import InMemoryDocumentStore
@@ -251,7 +251,7 @@ They are:
 
 More recently, **dense** approaches such as Dense Passage Retrieval (DPR) have shown even better performance than their sparse counter parts.
 These methods embed both document and query into a shared embedding space using deep neural networks
-and the top candidates are the nearest neighbour documents to the query.
+and the top candidates are the nearest neighbor documents to the query.
 They are:
 
 - powerful but computationally more expensive especially during indexing
@@ -295,7 +295,7 @@ and will require significant computational power and time.
 <!-- _comment: !! This section should be turned into something more like a side note !! -->
 
 The terms **dense** and **sparse** refer to the representations that the algorithms build for each document and query.
-**Sparse** methods characterise texts using vectors with one dimension corresponding to each word in the vocabulary.
+**Sparse** methods characterize texts using vectors with one dimension corresponding to each word in the vocabulary.
 Dimensions will be zero if the word is absent and non-zero if it is present.
 Since most documents contain only a small subset of the full vocabulary,
 these vectors are considered sparse since non-zero values are few and far between.

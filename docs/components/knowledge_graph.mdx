@@ -6,7 +6,7 @@ Haystack allows loading and querying knowledge graphs. In particular, Haystack c
 - Execute SPARQL queries on a knowledge graph
 - Execute text queries on the knowledge graph by translating them to SPARQL queries with the help of a pre-trained seq2seq model
 
-Haystack's knowledge graph functionalities are still in a very early stage. Thus, don't expect our [exemplary tutorial](/tutorials/knowledge-graph) to work on your custom dataset out-of-the-box.
+Haystack's knowledge graph functionalifties are still in a very early stage. Thus, don't expect our [exemplary tutorial](/tutorials/knowledge-graph) to work on your custom dataset out-of-the-box.
 Two classes implement the functionalities: GraphDBKnowledgeGraph and Text2SparqlRetriever.
 
 <div style={{ marginBottom: "3rem" }} />
@@ -104,4 +104,4 @@ For example, it can translate "Harry" to "hp:Harry_potter" only because we train
 
 Unfortunately, our pre-trained model for translating text queries does not work with your custom data.
 Instead, you need to train your own model. It needs to be trained according to the [seq2seq example for summarization with BART in transformers](https://github.com/huggingface/transformers/tree/master/examples/legacy/seq2seq).
-Haystack currently does not support the training of text2sparql models. We dont have concrete plans to extend the funtionality, but we are more than open to contributions. Don't hesitate to reach out!
+Haystack currently does not support the training of text2sparql models. We dont have concrete plans to extend the functionality, but we are more than open to contributions. Don't hesitate to reach out!
